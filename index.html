@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymath Solutions — Lautaro Cruz</title>
+<meta name="description" content="Polymath Solutions — Lautaro Cruz. Engineering execution meets analytical depth. Consulting across aerospace & defense electronics, automotive manufacturing, pharmaceutical capital projects, and critical supply chain research.">
+<style>
+  :root{
+    --ink:#16212e;
+    --ink-soft:#3d4c5e;
+    --muted:#6b7a8c;
+    --paper:#f7f5f1;
+    --card:#ffffff;
+    --accent:#1a5276;
+    --accent-soft:#e8eff4;
+    --rule:#dfd9cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:Georgia,'Times New Roman',serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+  }
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+
+  /* Nav */
+  nav{
+    border-bottom:1px solid var(--rule);
+    background:var(--paper);
+    position:sticky;top:0;z-index:10;
+  }
+  .nav-inner{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:14px 0;gap:16px;flex-wrap:wrap;
+  }
+  .brand{font-weight:700;letter-spacing:.02em;font-size:1.05rem;}
+  .nav-links{display:flex;gap:22px;flex-wrap:wrap;}
+  .nav-links a{
+    text-decoration:none;color:var(--muted);
+    font-size:.82rem;text-transform:uppercase;letter-spacing:.09em;
+  }
+  .nav-links a:hover{color:var(--accent);}
+
+  /* Hero */
+  header.hero{padding:84px 0 64px;}
+  .kicker{
+    font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;
+    color:var(--accent);margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(2rem,5.5vw,3.2rem);
+    line-height:1.15;font-weight:700;max-width:760px;
+  }
+  .hero p.lede{
+    margin-top:22px;font-size:1.12rem;color:var(--ink-soft);max-width:680px;
+  }
+  .hero-cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;text-decoration:none;
+    padding:12px 22px;font-size:.85rem;letter-spacing:.05em;
+    border:1px solid var(--accent);border-radius:2px;
+  }
+  .btn-solid{background:var(--accent);color:#fff;}
+  .btn-solid:hover{background:#14435f;}
+  .btn-ghost{color:var(--accent);}
+  .btn-ghost:hover{background:var(--accent-soft);}
+
+  /* Sections */
+  section{padding:56px 0;border-top:1px solid var(--rule);}
+  h2{
+    font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;
+    color:var(--accent);margin-bottom:28px;font-weight:600;
+  }
+  h3{font-size:1.15rem;margin-bottom:6px;}
+  .section-intro{max-width:700px;color:var(--ink-soft);margin-bottom:34px;font-size:1.02rem;}
+
+  /* Domain grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media(max-width:640px){.grid{grid-template-columns:1fr;}}
+  .card{
+    background:var(--card);border:1px solid var(--rule);border-radius:3px;
+    padding:24px 22px;
+  }
+  .card p{color:var(--ink-soft);font-size:.95rem;margin-top:8px;}
+  .card .tag{
+    font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--muted);
+  }
+
+  /* Work list */
+  .work-item{padding:22px 0;border-bottom:1px solid var(--rule);}
+  .work-item:last-child{border-bottom:none;}
+  .work-item p{color:var(--ink-soft);font-size:.98rem;margin-top:6px;max-width:720px;}
+  .metric{color:var(--accent);font-weight:700;}
+
+  /* Research */
+  .pub{padding:14px 0;border-bottom:1px dashed var(--rule);}
+  .pub:last-child{border-bottom:none;}
+  .pub .venue{color:var(--muted);font-size:.88rem;}
+  .pub .title{font-style:italic;}
+
+  /* Credentials */
+  .cred-row{display:flex;gap:18px;flex-wrap:wrap;}
+  .cred{flex:1 1 240px;background:var(--card);border:1px solid var(--rule);border-radius:3px;padding:20px;}
+  .cred .deg{font-weight:700;}
+  .cred .inst{color:var(--ink-soft);font-size:.92rem;}
+  .cred .yr{color:var(--muted);font-size:.85rem;}
+
+  /* Contact */
+  #contact{padding-bottom:72px;}
+  .contact-links{display:flex;flex-direction:column;gap:10px;margin-top:8px;}
+  .contact-links a{color:var(--accent);text-decoration:none;font-size:1.05rem;}
+  .contact-links a:hover{text-decoration:underline;}
+
+  footer{
+    border-top:1px solid var(--rule);
+    padding:26px 0;color:var(--muted);font-size:.82rem;
+  }
+</style>
+</head>
+<body>
+
+<nav class="sans">
+  <div class="wrap nav-inner">
+    <div class="brand">POLYMATH SOLUTIONS</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#domains">Domains</a>
+      <a href="#work">Selected Work</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker sans">Polymath Solutions · Lautaro Cruz</div>
+    <h1>Interesting problems, taken seriously — from the factory floor to the policy brief.</h1>
+    <p class="lede">
+      I'm an engineer, project manager, and political scientist. I've programmed soldering
+      lines for defense electronics, run automotive production at OEM pace, delivered
+      multimillion-dollar pharmaceutical capital projects solo, and mapped the global
+      rare-earth magnet supply chain for policymakers in Washington. If your problem sits
+      between disciplines, it sits in my wheelhouse.
+    </p>
+    <div class="hero-cta sans">
+      <a class="btn btn-solid" href="mailto:cruz.laut@gmail.com">Get in touch</a>
+      <a class="btn btn-ghost" href="#work">See the work</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="sans">About</h2>
+    <p class="section-intro">
+      Most consultants are specialists. My value is the opposite: a decade across
+      manufacturing, capital construction, and supply chain — layered with formal training
+      in econometrics, causal inference, and political economy. A BEng in Mechatronics, a BA
+      in Philosophy earned at night over five years while working full-time, and an MA in
+      Political Science (3.97 GPA, full scholarship). I take on engagements where technical
+      execution and analytical judgment have to live in the same head: supply chain risk
+      assessments, capital project rescue and delivery, manufacturing process problems,
+      policy-grade research and data work. Bilingual English/Spanish; Canadian and Argentine
+      citizen; based in the U.S. Midwest and available to work anywhere.
+    </p>
+  </div>
+</section>
+
+<section id="domains">
+  <div class="wrap">
+    <h2 class="sans">Domains</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="tag sans">Aerospace &amp; Defense Electronics</div>
+        <h3>Cleanroom PCBA manufacturing</h3>
+        <p>Process engineering at Celestica on programs for Honeywell, L3Harris, and Thales —
+        automated soldering and coating lines, X-ray inspection, NPI builds, and full-spectrum
+        electronic hardware BOMs, under ITAR-controlled project conditions.</p>
+      </div>
+      <div class="card">
+        <div class="tag sans">Automotive Manufacturing</div>
+        <h3>Tier-1 JIT production</h3>
+        <p>Production supervision at Faurecia supplying Ford and Chrysler exhaust systems on
+        a 9-hour lead time — 23-person teams, a machine-vision inspection system taken from
+        concept to production, and a globally recognized Kaizen.</p>
+      </div>
+      <div class="card">
+        <div class="tag sans">Pharmaceutical &amp; Industrial Capital Projects</div>
+        <h3>$2M–$20M program delivery</h3>
+        <p>Six years of project engineering and management at SPS for clients including Tesla,
+        GSK, ThermoFisher, and Apotex — FDA/cGMP sanitary process systems, BIM coordination,
+        international procurement across six countries.</p>
+      </div>
+      <div class="card">
+        <div class="tag sans">Supply Chain &amp; Policy Research</div>
+        <h3>Critical minerals and industrial strategy</h3>
+        <p>Research fellowship at Silverado Policy Accelerator in Washington, D.C. — built a
+        global facility-level dataset of the rare-earth permanent magnet supply chain and
+        presented findings to industry leaders and U.S. government officials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2 class="sans">Selected Work</h2>
+    <div class="work-item">
+      <h3>The one-man-army capital project</h3>
+      <p>Sole PM and technical lead on a <span class="metric">$5.7M</span> pharmaceutical
+      processing system: estimator, design engineer, procurement, client rep, and installation
+      foreman at once. Absorbed a <span class="metric">+$1M</span> mid-project scope expansion
+      and still delivered on time at a <span class="metric">24%</span> margin.</p>
+    </div>
+    <div class="work-item">
+      <h3>Machine vision, concept to shop floor</h3>
+      <p>Designed and deployed a camera-based quality inspection system in live automotive
+      production — building ground-truth datasets across product variants and real shop-floor
+      conditions — eliminating a manual inspection station while cutting cycle time.</p>
+    </div>
+    <div class="work-item">
+      <h3>Mapping a contested supply chain</h3>
+      <p>Constructed a dataset of <span class="metric">200+</span> rare-earth magnet
+      manufacturing and recycling facilities worldwide — ownership, capacity, and China-linked
+      dependencies — recovering deliberately removed data and modeling supply-demand through
+      2035 for briefings to senior U.S. policy audiences.</p>
+    </div>
+    <div class="work-item">
+      <h3>AI and the economy of esteem</h3>
+      <p>Master's thesis on how widespread AI mediation distorts the social systems that
+      allocate trust, credibility, and recognition — a PPE framework combining political
+      theory, decision-theoretic modeling, and economic analysis, presented at the Markets
+      &amp; Society Conference (2026).</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2 class="sans">Research &amp; Publications</h2>
+    <div class="pub">
+      <div class="title">Do Participatory Campaign Finance Reforms Polarize?</div>
+      <div class="venue sans">with Dr. Kistner (University of Houston) and Dr. Meisels (Yale University) — accepted, APSA Annual Meeting, Boston 2026. Difference-in-differences and synthetic control design.</div>
+    </div>
+    <div class="pub">
+      <div class="title">One Party, Many Audiences</div>
+      <div class="venue sans">with Dr. Casellas (University of Houston) — accepted, MPSA Annual Conference, Chicago 2026. Wordfish text-as-data analysis.</div>
+    </div>
+    <div class="pub">
+      <div class="title">The Unintended Aggregate Effects of AI Mediation on the Economy of Esteem</div>
+      <div class="venue sans">MA thesis, University of Houston — presented at the Markets &amp; Society Conference, Virginia 2026.</div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <h2 class="sans">Education</h2>
+    <div class="cred-row">
+      <div class="cred">
+        <div class="deg">MA, Political Science</div>
+        <div class="inst">University of Houston — quantitative methods &amp; political theory</div>
+        <div class="yr sans">2026 · 3.97 GPA · full scholarship</div>
+      </div>
+      <div class="cred">
+        <div class="deg">BA, Philosophy</div>
+        <div class="inst">University of Toronto — political theory &amp; bioethics</div>
+        <div class="yr sans">2024 · Dean's List Scholar ×3</div>
+      </div>
+      <div class="cred">
+        <div class="deg">BEng, Mechatronics Engineering</div>
+        <div class="inst">Toronto Metropolitan University</div>
+        <div class="yr sans">2017</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="sans">Contact</h2>
+    <p class="section-intro">Have an interesting problem? I'd like to hear about it.</p>
+    <div class="contact-links">
+      <a href="mailto:cruz.laut@gmail.com">cruz.laut@gmail.com</a>
+      <a href="https://www.linkedin.com/in/lautaro-c" target="_blank" rel="noopener">LinkedIn — linkedin.com/in/lautaro-c</a>
+      <a href="https://asimovmagicalrealism.substack.com" target="_blank" rel="noopener">Writing — asimovmagicalrealism.substack.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="sans">
+  <div class="wrap">© 2026 Polymath Solutions · Lautaro Cruz</div>
+</footer>
+
+</body>
+</html>
